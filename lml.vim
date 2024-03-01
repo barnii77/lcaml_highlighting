@@ -4,6 +4,10 @@ if exists("b:current_syntax")
   finish
 endif
 
+if expand("%:e") != "lml"
+  finish
+endif
+
 syntax clear
 
 " Keywords
